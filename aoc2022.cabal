@@ -1,0 +1,16 @@
+cabal-version:      2.4
+name:               aoc2022
+version:            0.1.0.0
+
+author:             gcholette
+maintainer:         solutions@gcholette.com
+
+executable aoc2022
+    main-is:          Main.hs
+    other-modules:
+        AocUtil
+        Day1
+
+    build-depends:    base ^>=4.17.0.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
