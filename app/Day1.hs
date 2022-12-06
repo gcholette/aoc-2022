@@ -1,12 +1,12 @@
 module Day1 where
 
-import AocUtil   (getChallengeData, isEmptyStr, printPart)
+import AocUtil   (getChallengeData, isStrDefined, printPart)
 import Data.List (groupBy, sort)
 
 parseChallengeData :: [String] -> [Int]
 parseChallengeData xs =
-  map (\x -> sum $ map read $ filter isEmptyStr x) $
-  groupBy (\x -> isEmptyStr) xs
+  map (\x -> sum $ map read $ filter isStrDefined x) $
+  groupBy (\x -> isStrDefined) xs
 
 run :: IO ()
 run = do

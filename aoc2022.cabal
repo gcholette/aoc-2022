@@ -10,6 +10,7 @@ executable aoc2022
     other-modules:
         AocUtil
         Day1
+        Day2
 
     build-depends:    base ^>=4.17.0.0
     hs-source-dirs:   app

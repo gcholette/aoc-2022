@@ -10,5 +10,5 @@ getChallengeData day isTest = do
     dayStr = show day
     extension = if isTest then "_test.txt" else ".txt"
 
-isEmptyStr :: Foldable t => t a -> Bool
-isEmptyStr s = length s > 0
+isStrDefined :: Foldable t => t a -> Bool
+isStrDefined s = length s > 0
